@@ -1,5 +1,7 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+/* Global css variable */
 :root{
     --orange:#C84B31;
     --light-orange:#FF5B22;
@@ -10,6 +12,7 @@
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
+/* Global styles */
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -30,23 +33,41 @@ html{
 }
 
 body{
+    /* To give gradient color to background  */
     background-image: linear-gradient(white,var(--light-pink),white);
 }
 section{
     padding: 3rem 9%;
 }
 
+/* button styles */
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: var(--orange);
+    transition: all 600ms;
+}
+
+.btn:hover{
+    background: #892909;
+}
+
+.wrapper-content{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* navigation bar start */
 .heading{
     text-align: center;
     color: var(--black);
     font-size: 5rem;
     padding-top: 5rem;
     padding-bottom: 4rem;
-}
-
-.wrapper-content{
-    width: 50%;
-    margin: 0 auto;
 }
 
 header{
@@ -69,6 +90,7 @@ header{
     font-weight: bolder;
 }
 
+/* >>>>styles for navbar menu items>> Restuarent, price, about, page */
 header .navbar a{
     font-size: 1.4rem;
     font-weight: 400;
@@ -78,7 +100,8 @@ header .navbar a{
     position: relative;
     letter-spacing: .5px;
 }
- 
+
+/* >>>>hover overline display for navbar menu items */
 header .navbar a:before{
     content: "";
     position: absolute;
@@ -102,6 +125,7 @@ header .navbar a:hover{
     font-weight: bold;
 } 
 
+/* >>>>Login and signup button styles */
 header .button{
     display: flex;
     align-items: center;
@@ -114,27 +138,14 @@ header .button p{
     font-size: 1.6rem;
 } 
 
-.btn{
-    display: inline-block;
-    padding: 1rem 2rem;
-    font-weight: 500;
-    border-radius: 2rem;
-    cursor: pointer;
-    color: white;
-    background-color: var(--orange);
-    transition: all 600ms;
-}
-
-.btn:hover{
-    background: #892909;
-}
-
 header .button #menu-bar{
     display: none;
     width: 5rem;
     text-align: center;
     font-size: 2rem;
 }
+/* navigation bar end */
+
 
 /* home section start */
 .home .home-container .inner-wrap{
@@ -171,7 +182,7 @@ header .button #menu-bar{
     text-transform: none;
     
 }
-
+/* >>>>location label/ order-button */
 .home .home-container .inner-wrap .content .location-search-box{
     flex: 1;
     position: relative;
@@ -204,7 +215,6 @@ header .button #menu-bar{
     background-color: var(--light-orange);
     color: white;
     font-size: 2rem;
-    
 }
 
 .home .home-container .content-bottom{
@@ -221,63 +231,10 @@ header .button #menu-bar{
     text-transform: capitalize;
 }
 
-
 .home .home-container .content-bottom span{
     color: var(--light-orange);
 }
 /* home section start */
-
-/* restuarent section start */
-/* .restaurants .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3rem 0;
-}
-
-.restaurants .wrapper .content{
-    width: 14%;
-    margin: 9px;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    padding-top: 1rem;
-    background: var(--light-bg);
-    height: 25rem;
-}
-
-.restaurants .wrapper .content .circle{
-    background: white;
-    width: 70%;
-    height: 50%;
-    border-radius: 70%;
-    margin-top: 3rem;
-    align-items: center;
-}
-
-.restaurants .wrapper .content .circle img{
-    width: 70%;
-    height: 70%;
-    align-items: center;
-    margin: 0 auto;
-    display: block;
-}
-
-.restaurants .wrapper .content p{
-    font-size: 2.2rem;
-    font-weight: 500;
-    margin: 3rem;
-
-} */
-/* restuarent section end */
-
-
-
-
 
 
 /* menu section start*/
@@ -285,7 +242,6 @@ header .button #menu-bar{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     gap: 2.5rem;
-    
 }
 
 .menu .box-container .box{
@@ -319,28 +275,6 @@ header .button #menu-bar{
     font-weight: 500;
 }
 /* menu section end*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -535,7 +469,6 @@ section footer .row{
 section footer .row .col{
     flex-basis: 25%;
     padding: 10px;
-    /* border: 1px solid red; */
 }
 
 section footer .row .col:nth-child(1),
@@ -572,6 +505,7 @@ footer .row .col ul li{
 
 footer .row .col ul li:first-child{color: pink;}
 
+/*  >>>>Horizontal line css above footer */
 hr{
     width: 95%;
     border: 0;
@@ -611,48 +545,6 @@ footer .row .col a i:hover{
 
 
 
-/* .footer-section .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 1.5rem;
-    border: 1px solid red;
-}
-section .footer-section{
-    border: 1px solid red;
-}
-.footer-section .box-container .box{
-    
-    padding-top: 5rem;
-}
-
-.footer-section .box-container .box .logo img{
-    padding-top: 6rem;
-}
-
-.footer-section .box-container .box p{
-    font-size: 1.4rem;
-}
-
-.footer-section .box-container .box ul{
-    padding-left: 4rem;
-    list-style-type: none;
-}
-
-.footer-section .box-container .box ul li{
-    
-    font-size: 1.4rem;
-    padding: 1rem 0;
-}
-
-.footer-section .box-container .box ul li:first-child{
-    color: #FFBFBF;
-}
-
-.footer-section .box-container .box a{
-    padding: 1rem;
-    font-size: 1.5rem;
-} */
-/* Footer section end */
 
 
 
@@ -662,20 +554,7 @@ section .footer-section{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media query start */
+/* Responsive design start */
 @media (max-width:991px){
     
     html{
@@ -686,23 +565,6 @@ section .footer-section{
         padding: 1rem 2rem;
     }
     
-    /* .restaurants .wrapper .content{
-        width: 30%;
-    } */
-
-    /* .restaurants .wrapper .content .circle{
-        width: 70%;
-        height: 40%;
-        border-radius: 70%;
-        margin-top: 3rem;
-        align-items: center; 
-    }
-    
-    .restaurants .wrapper .content .circle img{
-        width: 50%;
-        height: 50%;
-    } */
-
 }
 
 @media (max-width:768px){
@@ -762,23 +624,9 @@ section .footer-section{
         font-size: 1.6rem;
     }
 
-    .restaurants .wrapper .content{
-        width: 90%;
-        height: 100%;
+    .price-section .box-container{
+        gap: 3rem;
     }
-
-    /* .restaurants .wrapper .content .circle{
-        width: 40%;
-        height: 40%;
-        /* border-radius: 70%;
-        margin-top: 3rem;
-        align-items: center; 
-    }
-    
-    .restaurants .wrapper .content .circle img{
-        width: 50%;
-        height: 50%;
-    } */
 
     .about-section .row .side-img{
         margin: 0;
@@ -791,10 +639,7 @@ section .footer-section{
         font-size: 3.2rem;
         padding: .5rem 0;
     }
-    /* .about-section .row .content p{
-        font-size: 1.2rem;
-        padding: .1rem 0;
-    } */
+    
     .about-section .row .content .icon-container{
         padding: .5rem 0;
         margin-top: .5rem;
@@ -846,12 +691,13 @@ section .footer-section{
     flex-basis: 100%;
 } 
 
-footer .row .col .logo img{
-    margin-left: 0;
-    margin-top: 0;
-}
+    footer .row .col .logo img{
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
 
+/* Responsive design start */
 
 
 

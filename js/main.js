@@ -1,4 +1,8 @@
-//Menu bar start
+
+//note: this function is responsible for toggling the visibility of the menu.
+//when user clicks on a toggle button it adds or removes the 'active' class from
+//the menu element to control ots display status.
+
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
@@ -7,28 +11,7 @@ menu.onclick  = ()=>{
     navbar.classList.toggle('active');
 }
 
-// let section = document.querySelectorAll('section');
-// let navLinks = document.querySelectorAll('header .navbar a');
-
 window.onscroll  = ()=>{
     menu.classList.remove('ri-close-fill');
     navbar.classList.remove('active');
-
-    // section.forEach(sec =>{
-    //     let top = window.scrollY;
-    //     let height = sec.offsetHeight;
-    //     let offset = sec.offsetTop - 150;
-    //     let id = sec.getAttribute('id');
-
-    //     if(top => offset && top < offset + height){
-    //         navLinks.forEach(links =>{
-    //             links.classList.remove('active');
-    //             document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
-    //         });
-    //     };
-    // });
 }
-
-
-
-//Menu bar end
