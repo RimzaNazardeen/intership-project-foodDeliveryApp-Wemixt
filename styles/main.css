@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    --orange:#E55604;
+    --orange:#C84B31;
     --light-orange:#FF5B22;
     --red:#B31312;
     --black:#191919;
@@ -33,7 +33,7 @@ body{
     background-image: linear-gradient(white,var(--light-pink),white);
 }
 section{
-    padding: 4rem 10%;
+    padding: 3rem 9%;
 }
 
 .heading{
@@ -63,19 +63,44 @@ header{
 }
 
 .logo{
+    font-family: serif;
     color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2.7rem;
+    font-weight: bolder;
 }
 
+header .logo img:hover{
+
+}
 header .navbar a{
     font-size: 1.4rem;
     font-weight: 400;
     padding: 0.5rem 1.5rem;
     color: var(--black);
+
+    position: relative;
+    letter-spacing: .5px;
 }
  
+header .navbar a:before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: var(--orange);
+    transition: 0.5s;
+}
+
+.navbar a:before{
+    right: 0;
+    top: -20px;
+}
+/* header .navbar a.active, */
+.navbar a:hover:before{
+    width: 90%;
+}
 header .navbar a:hover{
+    
     color: var(--red);
     font-weight: bold;
 } 
@@ -99,8 +124,12 @@ header .button p{
     border-radius: 2rem;
     cursor: pointer;
     color: white;
-    background-color: var(--red);
-    transition: all 300ms ease;
+    background-color: var(--orange);
+    transition: all 600ms;
+}
+
+.btn:hover{
+    background: #892909;
 }
 
 header .button #menu-bar{
@@ -202,7 +231,7 @@ header .button #menu-bar{
 /* home section start */
 
 /* restuarent section start */
-.restaurants .wrapper{
+/* .restaurants .wrapper{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -246,8 +275,72 @@ header .button #menu-bar{
     font-weight: 500;
     margin: 3rem;
 
-}
+} */
 /* restuarent section end */
+
+
+
+
+
+
+/* menu section start*/
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    gap: 2.5rem;
+    
+}
+
+.menu .box-container .box{
+    background: var(--light-bg);
+    border-radius: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .box-container .box .wrapper-content img{
+    cursor: pointer;
+    height: 10rem;
+    width: 10rem;
+    margin: 4rem 0;
+    padding: 1.8rem;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+}
+
+menu .box-container .box h2{
+    font-size: 5rem;
+
+}
+/* menu section end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Price section start */
 .price-section .box-container{
@@ -326,6 +419,13 @@ header .button #menu-bar{
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: bold;
+    transition: 0.2s;
+}
+
+.price-section .box-container .box .content .btn:hover{
+    background: var(--light-orange);
+    color: white;
+    border-color: white;
 }
 
 
@@ -368,6 +468,7 @@ header .button #menu-bar{
 }
 
 .about-section .row .content h2{
+    font-family: serif;
     color: var(--black);
     font-size: 5rem;
     padding: 1rem 0;
@@ -390,7 +491,6 @@ header .button #menu-bar{
     align-items: center;
     justify-content: center;
     padding: .5rem 0;
-
 }
 
 .about-section .row .content .icon-container .icons i{
@@ -458,6 +558,11 @@ footer .row .col p{
     margin: 0 1rem;
 }
 
+footer .row .col .vertical-line{
+    height: 500px;
+    border-left: 2px solid #B31312;
+}
+
 footer .row .col ul li{
     list-style: none;
     font-size: 1.7rem;
@@ -474,11 +579,12 @@ hr{
     margin: 20px auto;
 }
 
-footer .row .col a{
+footer .row .col a i{
     font-size: 1.8rem;
     line-height: 4rem;
     margin-right: 1.5rem;
     color: black;
+    
 }
 
 .credit{
@@ -576,9 +682,9 @@ section .footer-section{
         padding: 1rem 2rem;
     }
     
-    .restaurants .wrapper .content{
+    /* .restaurants .wrapper .content{
         width: 30%;
-    }
+    } */
 
     /* .restaurants .wrapper .content .circle{
         width: 70%;
@@ -617,8 +723,11 @@ section .footer-section{
         display: block;
         font-size: 1.6rem;
         padding: 1.5rem;
+        margin: 1rem;
+        background-color: var(--light-bg);
         color: var(--black);
     }
+    
     .home .home-container .inner-wrap .content h1{
         font-size: 5rem;
     }
@@ -719,6 +828,7 @@ section .footer-section{
 
     section footer .row .col{
         flex-basis: 100%;
+        text-align: center;
     }
 
     section footer .row .col:nth-child(1),
