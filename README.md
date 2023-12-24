@@ -7,8 +7,11 @@ This is a front-end design of a responsive food delivery web application.
 In this project, I have concentrated  on creating a visually engaging, user friendly and responsive design.
 
 ##Technologies used
+
 -HTML
+
 -CSS
+
 -Java Script
 
 ##[Features]
