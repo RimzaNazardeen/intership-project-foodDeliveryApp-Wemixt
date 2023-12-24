@@ -538,6 +538,7 @@ section footer .row{
 section footer .row .col{
     flex-basis: 25%;
     padding: 10px;
+    /* border: 1px solid red; */
 }
 
 section footer .row .col:nth-child(1),
@@ -581,12 +582,16 @@ hr{
     margin: 20px auto;
 }
 
-footer .row .col a i{
+footer .row .col a {
     font-size: 1.8rem;
     line-height: 4rem;
     margin-right: 1.5rem;
     color: black;
-    
+    transition: 0.5s;
+}
+
+footer .row .col a i:hover{
+    color: var(--orange);
 }
 
 .credit{
