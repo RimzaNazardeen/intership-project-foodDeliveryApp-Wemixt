@@ -20,7 +20,7 @@ In this project, I have concentrated  on creating a visually engaging, user frie
 
 -[Feature] **Resposive Design:** Implemented a responsive design using media queries and a flexible gridlayout to ensure a seamless user experience accross different devices.
 
--[Feature] **Interactive Menubar:** I have intergrated a responsive menuabar using html,css and java script for dynamicfunctionality. 
+-[ Feature ] **Interactive Menubar:** I have intergrated a responsive menuabar using html,css and java script for dynamicfunctionality. 
 
 -[Feature] **Menubar Toggle:** Implemented a toggle function for navigation menubar(humberger menu) for mobile and other small screens.
 
@@ -29,3 +29,5 @@ When hover over Buttons and social media icons color transitions smoothly.
 When hover over Images of section Menu, the associated images scale-up. 
 
 -[Note] **Humberger menu and scroll Behaviour:** The humberger menu will automatically close when users scroll.
+
+-[Note] **Removed image for mobile display:** I have hidden two images for mobile phones to improve the overall mobile responsiveness of the application.
