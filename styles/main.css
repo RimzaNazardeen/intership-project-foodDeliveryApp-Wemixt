@@ -69,9 +69,6 @@ header{
     font-weight: bolder;
 }
 
-header .logo img:hover{
-
-}
 header .navbar a{
     font-size: 1.4rem;
     font-weight: 400;
@@ -95,7 +92,7 @@ header .navbar a:before{
     right: 0;
     top: -20px;
 }
-/* header .navbar a.active, */
+
 .navbar a:hover:before{
     width: 90%;
 }
@@ -735,6 +732,10 @@ section .footer-section{
         color: var(--black);
     }
     
+    .navbar a:hover:before{
+        width: 0%;
+    }
+
     .home .home-container .inner-wrap .content h1{
         font-size: 5rem;
     }
